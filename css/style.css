@@ -1,0 +1,160 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Segoe.ttf);
+}
+
+* {
+    font-family: myFont;
+}
+
+.logo {
+    margin-top: 60px;
+    margin-left: 14px;
+}
+.logo > img {
+    width: 100px;
+    height: auto; 
+}
+.main-page {
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+.reg-page {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+@media only screen and (max-width:729px) {
+    .reg-page {
+        margin-left: 20px;
+        margin-right: 20px;
+    } 
+}
+/* @media only screen and (max-width: 760px) {
+    .relog ul li {
+       display: inline;
+    }
+} */
+p {
+    color: #666666; 
+}
+.tab-content p {
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+button span {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.tab-pane button:hover {
+    background-color: rgba(136, 147, 237, 1);
+}
+input {
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    color: #cacaca;
+    width: 100%;
+    padding-top: 10px;
+   line-height: 50px !important;
+   text-indent: 15px;
+}
+input:focus {
+    outline: none !important;
+}
+.tab-pane button {
+    color: #FFF;
+    background-color: rgba(136, 147, 237, 0.4);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+}
+.tab-pane button span {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+.tab-pane button span {
+    color: white;
+}
+.tab-pane button:hover span {
+    transition-delay: 30ms;
+    transform: translateX(5px);
+}
+.tab-pane button .arrow {
+    transition: all 0.2s ease-in;
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+}
+.tab-pane p {
+    margin-top: 14px;
+}
+.nav-tabs li a:hover {
+    border-bottom-color:#fff !important;
+}
+.nav-tabs > li > a {
+    border: 0 !important;
+}
+.nav-tabs > li > a {
+    border-bottom: 1px solid #929292 !important;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    border-bottom: 1px solid blue !important;
+    background-color: #fff !important;
+}
+.social {
+    width: 80%;
+    position: relative;
+    margin-top: 85px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.social button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(59,89,152)!important;
+    transition: all 0.3s ease-in-out;
+}
+.social button:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    text-shadow: none;
+    
+}
+.social button span {
+    color: #fff;
+    font-size: 13px;
+}
+.social button .arrow {
+    margin-left: 30px;
+    font-weight: 800;
+}
+.social p {
+    margin-bottom: 20px;
+}
+.facbook-btn button {
+    display: block;
+}
+/* @media only screen and (max-width: 729px) {
+    .social > button {
+        display: block;
+    }
+} */
+form div a {
+    font-size: 10px;
+    margin-top: 0px !important;
+}
+form div a:hover {
+    text-decoration: none;
+}
+form div a[href*="#"] {
+    float: right;
+}
+/*  */

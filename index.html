@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login | Barter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <!-- Inteltel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.11/css/intlTelInput.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.11/js/intlTelInput.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.11/img/flags.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.11/js/utils.js"> -->
+</head>
+<body class="container">
+    <div class="reg-page">
+        <div class="logo">
+           <img src="img/logo.png" alt="Barter logo"> 
+        </div>
+        <div class="row main-page">
+            <div class="col-sm-7 relog">    
+                
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active col-sm-7"><a data-toggle="tab" href="#tabs-first" style="color: #495087;">Register</a></li>
+                    <li class="login col-sm-7"><a data-toggle="tab" href="#tabs-second" style="color: #495087;">Login</a></li>
+                </ul>
+           
+            <div class="tab-content col-sm-12">
+                <!-- <h2>Register</h2> -->
+                <p>Barter makes online payments safe and easy, with a new virtual card for each place you pay online.</p>
+                <div id="tabs-first" class="active tab-pane fade-in register">
+                    <form action="">
+                        <input type="text" name="firstname" placeholder="First Name" value="" required><br><br>
+                        <input type="text" name="lastname" placeholder="Last Name" value="" required><br><br>
+                        <input type="text" name="email" placeholder="Email Address" value="" required><br><br>
+                        <input type="password" name="pwd" placeholder="Password" value="" required><br><br>
+                        <input type="tel" name="phonenumber" placeholder="81 123 456 78" autocomplete="off" id="mobile-number" size="92"required><br><br>
+                        <!-- <div class="input-phone"></div> -->
+                        <!-- <input id="mobile-number" type="tel"> -->
+                        <button type="button" class="btn"><span>Register Account</span>  <span class="arrow">&rarr;</span></button>
+                        
+                    </form>
+                </div>
+            <div id="tabs-second" class="tab-pane fade">
+                <!-- <h2>Login</h2> -->
+                <form action="">
+                    <input type="email" name="email" placeholder="Email Address" id=""><br><br>
+                    <input type="password" name="pwd" placeholder="Password" id=""><br>
+                    <div class="forgot_pwd"><a href="#">Forgot Password?</a></div><br><br>
+                    <button type="button" class="btn"><span>Log into Account</span>  <span class="arrow">&rarr;</span></button>
+                </form>
+                <p>Login with Phone Number?</p>
+            </div>
+                
+            </div>
+                  
+            </div>
+            <div class="col-sm-4 social">
+                <p>You can sign in using your accounts on <br>these sites:</p>
+                <div class="facebook-btn">
+                    <button type="button" class="waves-effect btn"><span>Facebook</span>  <span class="arrow">&rarr;</button><br><br>
+                    <button type="button" class="waves-effect google btn" style="background-color:#DD4B39 !important; "><span>Google</span>  <span class="arrow">&rarr;</button>
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- <script src="scripts/jquery-2.1.4.js"></script> -->
+    
+   
+  <!-- Load jQuery from CDN so can run demo immediately -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.11/js/intlTelInput.js"></script>
+  <script>
+  $("#mobile-number").intlTelInput({
+      //allowExtensions: true,
+      //autoFormat: false,
+      //autoHideDialCode: false,
+      //autoPlaceholder: false,
+      //defaultCountry: "auto",
+      //ipinfoToken: "yolo",
+      //nationalMode: false,
+      //numberType: "MOBILE",
+      //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      //preferredCountries: ['cn', 'jp'],
+      //preventInvalidNumbers: true,
+      utilsScript: "lib/libphonenumber/build/utils.js"
+  });
+  </script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.11/js/intlTelInput.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   
+</script>
+</body>
+</html>
