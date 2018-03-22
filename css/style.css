@@ -43,7 +43,7 @@ p {
 }
 button span {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: myFont;
     text-transform: uppercase;
 }
 .tab-pane button:hover {
@@ -157,4 +157,12 @@ form div a:hover {
 form div a[href*="#"] {
     float: right;
 }
-/*  */
+.tab-pane a {
+    color: rgba(136, 147, 237, 1);
+    /* padding-top: 180px; */
+    padding-left: 10px;
+}
+.tab-pane a:hover {
+    text-decoration: none;
+    color: #929292;
+}
